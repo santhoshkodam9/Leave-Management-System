@@ -1,0 +1,190 @@
+/* Desktop View */
+  .desktop-menu {
+    display: block;
+  }
+  div.banner .mobile-menu {
+    display: none;
+  }  
+  .navbar{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.16em;
+    color: #000000;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content:  space-between;
+    margin-top: 10px;
+    border-bottom: 1px solid #D7DFE9;
+  }
+  .add-btn{
+    background-color: whitesmoke;
+    color: black;
+    padding: 10px 26px;
+    background: #FFFFFF;
+    border-radius: 300px;
+    font-family: 'HK Grotesk';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 24px;
+    color: #FFFFFF;
+    background: #2DCA73;
+    border-radius: 4px;
+    padding: 8px 20px;
+  }
+  .logo{
+    cursor: pointer;
+    height: 50px;
+    width: 100px;
+  }
+  .navbar ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 0px 20px;
+    position: relative;
+    cursor: pointer;
+  }
+  .navbar ul li a{
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+  }
+  .navbar ul li::after {
+    content: '';
+    height:  3px;
+    width: 0%;
+    background: #009688;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+    cursor: pointer;
+  }
+  .navbar ul li:hover::after {
+    width: 100%;
+  }
+  .navbar-nav {
+    text-align: center;
+  }
+  .profile-icon{
+    border-radius: 20px;
+    width: 30px;
+  }
+  .fa-sign-out{
+    font-size: 20px;
+  }
+
+@media only screen and (min-width: 981px) and (max-width: 1370px) { 
+
+  .navbarul li{
+    list-style: none;
+    display: inline-block;
+    padding: 0px 10px;
+    position: relative;
+    cursor: pointer;
+  }
+  .navbar ul li {
+    padding: 0px 2px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 13px;
+    letter-spacing: 0.16em;
+  }
+  .navbar ul li a{  
+    font-size: 14px;
+  }
+  
+}
+
+/* Tab View - 769px */
+@media only screen and (min-width: 765px) and (max-width: 980px) {
+  
+  .logo.desktop-menu{
+    height: 37px;
+    width: 150px;
+  }
+  .navbar ul li {
+    padding: 0px 15px;
+  }
+  .navbar ul li a{
+    text-align: center;
+    padding: 5px 2px;
+    font-style: normal;
+    font-family: 'DM Sans';
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 13px;
+    letter-spacing: 0.16em;
+  }
+  .add-btn{
+    text-align: center;
+    width: 105px;
+    padding: 5px;
+    height: 32px;
+  }
+
+}
+
+/* Mobile View - 376px */
+@media only screen and (max-width: 767px){
+
+  .desktop-menu {
+    display: block;
+  }
+  div.banner .mobile-menu {
+    display: none;
+    background-color: white;
+  }
+  button[aria-expanded="true"] > span.close {
+    display: inline;
+    color: #fff;
+    opacity: 1;
+  }
+  button[aria-expanded="true"] > span.navbar-toggler-icons {
+    display: none;
+  }
+  button[aria-expanded="false"] > span.close {
+    display: none;
+  }
+  .hamburger{
+    display: block;
+  }
+  span.close {
+    display: none;
+  }
+  .navbar-toggler{
+    float: right;
+    padding: 2px;
+    border: none;
+    outline: none;
+  }
+  .navbar ul li{
+    margin: 20px 0px;
+  }
+  li.nav-item{
+    margin-left: 120px;
+  }
+  div.banner .mobile-menu li:hover {
+    background-color: #80808052;
+  }
+  
+@media only screen and (min-width: 317px) and (max-width: 427px) {
+
+  .navbar-nav {
+    width: 100%;
+  }
+  .navbar ul li {
+    display: inline-block;
+    padding: 0px 0px;
+  }
+  .navbar ul li a.nav-link{
+    font-size: 10px;
+  }
+}
+}
